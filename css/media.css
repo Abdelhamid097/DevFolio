@@ -7,3 +7,49 @@
         font-size: 4.5rem;
     }
 }
+
+@media (max-width: 768px) {
+
+    .navbar a:hover::before,
+    .navbar li:hover>a::before,
+    .navbar .active:before {
+        visibility: visible;
+        width: 10%;
+    }
+
+    .header-section,
+    .section-counter,
+    .carousel-section,
+    .carousel-section,
+    #contact {
+        background-attachment: scroll;
+    }
+}
+
+@media (max-width: 417px) {
+    .title-a {
+        text-decoration: none;
+        font-size: 3rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        position: relative;
+    }
+
+    .title-a::before {
+        content: "";
+        position: absolute;
+        height: 4px;
+        background-color: #0078ff;
+        width: 40px;
+        bottom: -65px;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: all 0.5s ease-in-out;
+    }
+
+    .my-name {
+        font-size: 2.5rem;
+        color: #fff;
+        font-weight: 600;
+    }
+}
